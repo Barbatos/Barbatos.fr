@@ -1,4 +1,8 @@
 BarbatosFr::Application.routes.draw do
+  resources :news
+
+  root :to => "home#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
