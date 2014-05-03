@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="page-header">
+    <h2>Personal Projects</h2>
+  </div>
+  <div class="row-fluid">
+    <ul class="thumbnails">
+
+      <% @personalProjects.each do |project| %>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img src="/img/<%= project.imgmini %>" alt="product name">
+          <div class="caption caption-projects">
+            <h3><%= project.nom %></h3>
+            <p>
+              <%= project.shortdesc %>
+            </p>
+          </div>
+          <div class="widget-footer">
+            <p class="pagination-centered">
+              <a href="/projects/<%= project.url %>/" class="btn">Read more</a>
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <% end %>
+    </ul>
+  </div>
+ 
+  <div class="page-header">
+    <h2>University Projects</h2>
+  </div>
+  <div class="row-fluid">
+    <ul class="thumbnails">
+
+      <% @universityProjects.each do |project| %>
+
+      <li class="span3">
+        <div class="thumbnail">
+          <img src="/img/<%= project.imgmini %>" alt="product name">
+          <div class="caption caption-projects">
+            <h3><%= project.nom %></h3>
+            <p>
+              <%= project.shortdesc %>
+            </p>
+          </div>
+          <div class="widget-footer">
+            <p class="pagination-centered">
+              <a href="/projects/<%= project.url %>/" class="btn">Read more</a>
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+
+<%= link_to 'New Project', new_project_path %>

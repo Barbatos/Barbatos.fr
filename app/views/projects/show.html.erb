@@ -1,0 +1,17 @@
+<div class="container">
+  	<airticle class="article">
+		<div class="row bottom-space">
+			<div class="span12">
+	  			<div class="page-header">
+	  				<h1><%= @project.nom %> <%= link_to 'Edit', edit_project_path(@project) %></h1>
+	  			</div>
+			</div>
+			<div class="span12 center-align">
+	  			<img src="/img/<%= @project.img %>" class="thumbnail product-snap">            
+			</div>
+		</div>
+		<div class="row">
+			<%= @project.description.html_safe %>                                        
+		</div>   
+  	</airticle>
+</div>

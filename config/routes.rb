@@ -2,8 +2,12 @@ BarbatosFr::Application.routes.draw do
   resources :news
   resources :home
   resources :about
+  resources :projects
+  resources :contact
 
   root :to => "home#index"
+
+  match 'projects/:string' => 'projects#view'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
