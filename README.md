@@ -1,2 +1,2 @@
-Barbatos.fr
-===========
+# Barbatos.fr
+### a Sails application
