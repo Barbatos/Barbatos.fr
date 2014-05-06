@@ -83,6 +83,9 @@ a:after {
     padding: 0;
 }
 
+.margin-top-30 {
+  margin-top: 30px;
+}
 
 .navbar {
 	text-transform: uppercase;
@@ -90,8 +93,8 @@ a:after {
 }
 
 .navbar-inverse {
-	padding-bottom: 70px;
-	padding-top: 70px;
+	padding-bottom: 45px;
+	padding-top: 45px;
 }
 
 .navbar-inverse {
@@ -146,7 +149,6 @@ a:after {
 	padding-bottom: 70px;
 	background-color: #f2f2f2;
 }
-
 
 #footer {
 	background-color: #2f2f2f;
