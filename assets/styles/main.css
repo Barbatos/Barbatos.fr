@@ -99,7 +99,7 @@ a:after {
 
 .navbar-inverse {
 	background-color: #4D6499;
-	border-color: #16a085;
+	border-color: #4D6499;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -136,12 +136,19 @@ a:after {
 	margin-bottom: 40px;
 }
 
+.mt2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .pt {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-
+.margin-top-30 {
+  margin-top: 30px;
+}
 /* +++++ WRAP SECTIONS +++++ */
 
 #ww {

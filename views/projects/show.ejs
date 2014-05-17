@@ -1,0 +1,16 @@
+<div class="container pt">
+  <div class="row mt2">
+    <div class="col-lg-12">
+      <h3><%= project.name %></h3>
+      <hr>
+    </div>
+    <div class="col-lg-6 margin-top-30">
+      <img src="/images/projects/<%= project.img %>" alt="" width="500"/>
+    </div>
+    <div class="col-lg-6">
+      <p><%- project.description %></p>
+
+      <%- project.missions %>
+    </div>
+  </div>
+</div>

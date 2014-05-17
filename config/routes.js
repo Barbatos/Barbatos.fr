@@ -36,7 +36,12 @@ module.exports.routes = {
     view: 'home/index'
   },
 
-  '/about': 'AboutController.index'
+  '/about': 'AboutController.index',
+
+  'get /projects/:slug': {
+    controller: 'Projects',
+    action: 'show'  
+  } 
 
   /*
   // But what if you want your home page to display
