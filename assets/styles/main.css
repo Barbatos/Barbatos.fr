@@ -177,9 +177,15 @@ a:after {
 /* +++++ Color Wraps / Blog Page +++++ */
 
 #grey {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	background-color: #f2f2f2;
+}
+
+#lightgrey {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f9f9f9;
 }
 
 #white {
@@ -264,15 +270,34 @@ bt {
   height: 96px;
   width: 96px;
 }
-.circle img {
+
+.circle-small {
+  line-height: 0;   /* remove line-height */ 
+  display: inline-block;  /* circle wraps image */
+  margin: 5px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-radius: 50%; /* relative value */
+  transition: linear 0.25s;
+  height: 50px;
+  width: 50px;
+}
+
+.circle img, .circle-small img {
   border-radius: 50%; /* relative value for
            adjustable image size */
 }
-.circle:hover {
+
+.circle:hover, .circle-small:hover {
   transition: ease-out 0.2s;
   border: 2px solid rgba(255,255,255,0.8);
   -webkit-transition: ease-out 0.2s;
 }
-a.circle {
+
+a.circle, a.circle-small {
   color: transparent;
 } 
+
+.img-350-263 {
+  width: 350px;
+  height: 263px;
+}

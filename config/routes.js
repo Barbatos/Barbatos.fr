@@ -41,6 +41,11 @@ module.exports.routes = {
   'get /projects/:slug': {
     controller: 'Projects',
     action: 'show'  
+  },
+
+  'get /blog/:slug': {
+    controller: 'Blog',
+    action: 'show'  
   } 
 
   /*

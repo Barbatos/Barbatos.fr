@@ -1,0 +1,21 @@
+<% _.each(posts, function(post) { %>
+<% if (post.id % 2 == 0) { var color = "grey" } else { var color = "lightgrey" } %>
+<div id="<%= color %>">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <p>
+          <a href="https://twitter.com/Barbatos__" class="circle-small" title="Twitter account of Charles Duprey">
+            <img height="50" width="50" src="/images/barbatos.png" alt="Charles Duprey (@Barbatos__">
+          </a>
+          <ba><%- post.author %></ba>
+        </p>
+        <p><bd><%=: post.createdAt | formatDate %></bd></p>
+        <h4><a href="/blog/<%= post.slug %>" title="<%= post.title %>"><%- post.title %></a></h4>
+        <p><%- post.post %></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<% }) %>
