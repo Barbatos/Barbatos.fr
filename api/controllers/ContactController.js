@@ -17,5 +17,8 @@ module.exports = {
       text: message, 
       html: message
     });
+
+    req.flash('message', 'Your message was successfully sent, thank you!');
+    return res.redirect('/contact');
   }
 };
