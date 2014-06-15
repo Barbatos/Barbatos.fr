@@ -113,7 +113,14 @@ a:after {
 .navbar-brand {
 	font-weight: 700;
 	font-size: 20px;
-	letter-spacing: 2px;
+	letter-spacing: 4px;
+  padding: 6px 15px;
+}
+
+.navbar-brand-small {
+  font-weight: 670;
+  font-size: 14.4px;
+  letter-spacing: .7px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -300,4 +307,9 @@ a.circle, a.circle-small {
 .img-350-263 {
   width: 350px;
   height: 263px;
+}
+
+.btn-primary {
+  background-color: #4D6499;
+  border-color: #4D6499;
 }
