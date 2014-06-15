@@ -1,52 +1,54 @@
-<div class="container pt">
-  <div class="row mt2 centered">
-    <div class="col-lg-6 col-lg-offset-3">
-      <h3>Professional Projects</h3>
-      <hr>
-      <p>These are the projects on which I have worked for a few bucks. :)
+<div id="ww">
+  <div class="container">
+    <div class="row mt2 centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h3>Professional Projects</h3>
+        <hr>
+        <p>These are the projects on which I have worked for a few bucks. :)
+      </div>
+
+      <% _.each(pro_projects, function(project) { %>
+      <div class="col-lg-4">
+        <a class="zoom green" href="/projects/<%= project.slug %>">
+          <img class="img-responsive img-350-263" src="/images/projects/<%= project.img_small %>" alt="<%= project.name %>" />
+        </a>
+        <p><%= project.name %></p>
+      </div>
+      <% }) %>
+    </div>
+    
+    <div class="row mt2 centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h3>Personal Projects</h3>
+        <hr>
+        <p>These are my personal projects for which I devote my free time.</p>
+      </div>
+
+      <% _.each(perso_projects, function(project) { %>
+      <div class="col-lg-4">
+        <a class="thumbnail zoom green" href="/projects/<%= project.slug %>">
+          <img class="img-responsive img-350-263" src="/images/projects/<%= project.img_small %>" alt="<%= project.name %>" />
+        </a>
+        <p><%= project.name %></p>
+      </div>
+      <% }) %>
     </div>
 
-    <% _.each(pro_projects, function(project) { %>
-    <div class="col-lg-4">
-      <a class="zoom green" href="/projects/<%= project.slug %>">
-        <img class="img-responsive img-350-263" src="/images/projects/<%= project.img_small %>" alt="<%= project.name %>" />
-      </a>
-      <p><%= project.name %></p>
-    </div>
-    <% }) %>
-  </div>
-  
-  <div class="row mt2 centered">
-    <div class="col-lg-6 col-lg-offset-3">
-      <h3>Personal Projects</h3>
-      <hr>
-      <p>These are my personal projects for which I devote my free time.</p>
-    </div>
+    <div class="row mt2 centered">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h3>University Projects</h3>
+        <hr>
+        <p>A few projects I've developed at school with other students.</p>
+      </div>
 
-    <% _.each(perso_projects, function(project) { %>
-    <div class="col-lg-4">
-      <a class="thumbnail zoom green" href="/projects/<%= project.slug %>">
-        <img class="img-responsive img-350-263" src="/images/projects/<%= project.img_small %>" alt="<%= project.name %>" />
-      </a>
-      <p><%= project.name %></p>
+      <% _.each(uni_projects, function(project) { %>
+      <div class="col-lg-4">
+        <a class="zoom green" href="/projects/<%= project.slug %>">
+          <img class="img-responsive img-350-263" src="/images/projects/<%= project.img_small %>" alt="<%= project.name %>" />
+        </a>
+        <p><%= project.name %></p>
+      </div>
+      <% }) %>
     </div>
-    <% }) %>
-  </div>
-
-  <div class="row mt2 centered">
-    <div class="col-lg-6 col-lg-offset-3">
-      <h3>University Projects</h3>
-      <hr>
-      <p>A few projects I've developed at school with other students.</p>
-    </div>
-
-    <% _.each(uni_projects, function(project) { %>
-    <div class="col-lg-4">
-      <a class="zoom green" href="/projects/<%= project.slug %>">
-        <img class="img-responsive img-350-263" src="/images/projects/<%= project.img_small %>" alt="<%= project.name %>" />
-      </a>
-      <p><%= project.name %></p>
-    </div>
-    <% }) %>
   </div>
 </div>

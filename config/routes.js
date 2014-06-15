@@ -46,7 +46,12 @@ module.exports.routes = {
   'get /blog/:slug': {
     controller: 'Blog',
     action: 'show'  
-  } 
+  }, 
+
+  'post /contact': {
+    controller: 'Contact',
+    action: 'sendEmail'
+  },
 
   /*
   // But what if you want your home page to display
