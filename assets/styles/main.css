@@ -313,3 +313,7 @@ a.circle, a.circle-small {
   background-color: #4D6499;
   border-color: #4D6499;
 }
+
+.blogPost {
+  text-align: justify;
+}
