@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-lg-offset-3 centered">
-        <% if (req.session.flash.message) { %>
+        <% if (req.session.flash && req.session.flash.message) { %>
           <div class="alert alert-success">
             <%= req.flash('message') %>
           </div>

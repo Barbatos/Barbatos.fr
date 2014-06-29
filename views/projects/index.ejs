@@ -9,7 +9,7 @@
 
       <% _.each(pro_projects, function(project) { %>
       <div class="col-lg-4">
-        <a class="zoom green" href="/projects/<%= project.slug %>">
+        <a class="thumbnail zoom" href="/projects/<%= project.slug %>">
           <img class="img-responsive img-350-263" src="/images/projects/<%= project.img_small %>" alt="<%= project.name %>" />
         </a>
         <p><%= project.name %></p>
@@ -26,7 +26,7 @@
 
       <% _.each(perso_projects, function(project) { %>
       <div class="col-lg-4">
-        <a class="thumbnail zoom green" href="/projects/<%= project.slug %>">
+        <a class="thumbnail zoom" href="/projects/<%= project.slug %>">
           <img class="img-responsive img-350-263" src="/images/projects/<%= project.img_small %>" alt="<%= project.name %>" />
         </a>
         <p><%= project.name %></p>
@@ -43,7 +43,7 @@
 
       <% _.each(uni_projects, function(project) { %>
       <div class="col-lg-4">
-        <a class="zoom green" href="/projects/<%= project.slug %>">
+        <a class="thumbnail zoom" href="/projects/<%= project.slug %>">
           <img class="img-responsive img-350-263" src="/images/projects/<%= project.img_small %>" alt="<%= project.name %>" />
         </a>
         <p><%= project.name %></p>
